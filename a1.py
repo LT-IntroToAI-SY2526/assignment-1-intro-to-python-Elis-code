@@ -20,7 +20,8 @@ Remember: The goal is to LEARN, not just get working code!
 
 """
 MY ORIGINAL AI PROMPT:
-[Paste the prompt you used to generate your problem set here]
+I a highschooler learning to code in python. I already know how to use java and C++. 
+can you give me 5 practice problems to learn the basics of python syntax and any python only methods. 
 
 Example: "I'm learning Python basics in a high school programming class. 
 I have some experience with Java. Can you create 5-7 practice problems that cover..."
@@ -32,15 +33,51 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 
 """
 PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
+Problem 1: Word Frequency Counter
 
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
+Topic: Dictionaries, Loops, split(), String Methods
 
-Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
+Write a Python function that takes a string of text and returns a dictionary with the frequency of each word. 
+
+
+Problem 2: List Comprehension Filter
+
+Topic: List Comprehensions
+
+Write a function that takes a list of integers and returns a new list containing only the squares of even numbers.
+
+
+
+Problem 3: Unique Elements with Sets
+
+Topic: Sets, set(), len()
+
+Write a function that takes a list and returns True if all elements are unique, otherwise False.
+
+
+
+Problem 4: FizzBuzz with List Comprehension
+
+Topic: Ranges, Conditionals, List Comprehension
+
+Write a one-liner list comprehension to generate the classic FizzBuzz from 1 to 30.
+
+For multiples of 3, use "Fizz"
+
+For multiples of 5, use "Buzz"
+
+For multiples of both, use "FizzBuzz"
+
+Otherwise, use the number itself
+
+Python Feature: One-liner with list comprehension and ternary expressions:
+
+
+Problem 5: File Word Count
+
+Topic: File I/O, with, open(), read()
+
+Write a Python function that takes a file name, reads the file, and returns the number of words.
 """
 
 
