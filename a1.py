@@ -1,5 +1,5 @@
 # Assignment 1: AI-Generated Python Problems
-# Name: [Your Name Here]
+# Name: Eli Curran
 
 """
 AI-Generated Problem Set
@@ -38,24 +38,46 @@ Problem 1: Word Frequency Counter
 Topic: Dictionaries, Loops, split(), String Methods
 
 Write a Python function that takes a string of text and returns a dictionary with the frequency of each word. 
+"""
+import string
+def word_frequency(text):
+    # Removes punctuation using str.translate and finds the punctuatioing using .puncuation
+    text = text.lower().translate(str.maketrans('', '', string.punctuation))
+    # uses split() to split up each word ... duh
+    words = text.split()
+    
+    freq = {}
+    # creates an emty list to fill
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    return freq
+    # for each word in words add the word to the list and add 1 to the count
 
 
+
+"""
 Problem 2: List Comprehension Filter
 
 Topic: List Comprehensions
 
 Write a function that takes a list of integers and returns a new list containing only the squares of even numbers.
+"""
+def squares_of_evens(nums):
+    return [x**2 for x in nums if x % 2 == 0]
+# if the number is even the number is taken squared and returned, goes throught the whole thing of numbers 
 
 
-
+"""
 Problem 3: Unique Elements with Sets
 
 Topic: Sets, set(), len()
 
 Write a function that takes a list and returns True if all elements are unique, otherwise False.
-
-
-
+"""
+def all_unique(lst):
+    return len(lst) == len(set(lst))
+# if the length of the origial list is equal to the list with all unique elements
+"""
 Problem 4: FizzBuzz with List Comprehension
 
 Topic: Ranges, Conditionals, List Comprehension
@@ -71,15 +93,29 @@ For multiples of both, use "FizzBuzz"
 Otherwise, use the number itself
 
 Python Feature: One-liner with list comprehension and ternary expressions:
+"""
+def fizzbuzz(n):
+    return ['FizzBuzz' if i % 15 == 0 else
+            'Fizz' if i % 3 == 0 else
+            'Buzz' if i % 5 == 0 else i
+            for i in range(0, n)]
+# takes in a number and iterates through it in a list
+# checks to see if every number is divisable by 3 and 5
+# also checks to see if it is divisable by the gcf of 3 and 5, returns priority
+#if the number checked is not divisable by any it simply adds the number to the list
 
-
+"""
 Problem 5: File Word Count
 
 Topic: File I/O, with, open(), read()
 
 Write a Python function that takes a file name, reads the file, and returns the number of words.
 """
-
+def count_words(filename):
+    with open(filename, 'r') as file:
+        text = file.read()
+        words = text.split()
+        return len(words)
 
 
 
@@ -107,18 +143,25 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
 print("Testing Problem 1:")
-# Add your tests here
+t = 'Hello world! Hello Python.'
+assert word_frequency(t) == {'hello': 2, 'world': 1, 'python': 1}
+
 
 print("\nTesting Problem 2:")
-# Add your tests here
+num = [1, 2, 3, 4, 5, 6]
+assert squares_of_evens(num) == [4, 16, 36]
 
 print("\nTesting Problem 3:")
-# Add your tests here
+set1 = [1, 2, 3, 4, 5]
+set2 = [1, 2, 3, 3, 4]
+assert all_unique(set1) == True
+assert all_unique(set2) == False
+
 
 print("\nTesting Problem 4:")
-# Add your tests here
+print(fizzbuzz(30)) 
 
 print("\nTesting Problem 5:")
-# Add your tests here
+
 
 

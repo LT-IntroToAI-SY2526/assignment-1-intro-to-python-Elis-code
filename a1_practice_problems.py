@@ -1,3 +1,4 @@
+
 """Assignment 1
 
 Fill in the following function skeletons - descriptions are provided in 
@@ -84,7 +85,7 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    count = sum(lst) / len(lst)
+    count = sum_list(lst) / len(lst)
     return count
 
 
@@ -98,17 +99,26 @@ def median(lst: List[int]) -> float:
         med = lst[i // 2]
         return med
     else:
-        med1 = lst[i//2 - 1]
-        med2 = lsti // 2]
+        med1 = lst[i // 2 - 1]
+        med2 = lst[i // 2]
         return med1 + med2
 
 
 
 
-
 def duck_duck_goose(lst: List[str]) -> List[str]:
-    while (len(lst) > 2):
-        
+    n = 0
+    count = 0
+    while len(lst) > 2:
+        count += 1
+        if count == 3:
+            lst.pop(n)
+            count = 0
+            if n >= len(lst):
+                n = 0
+        else:
+            n = (n + 1) % len(lst)
+    return lst
 
 
 
