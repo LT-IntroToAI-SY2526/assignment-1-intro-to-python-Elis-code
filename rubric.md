@@ -20,12 +20,12 @@ Remember: The goal is to **learn programming** while building **AI collaboration
 | Criteria | Points Possible | Points Earned | Comments |
 |----------|----------------|---------------|----------|
 | **Programming Completion** | | | |
-| a1.py Functions Complete | 3 | | |
-| a1_practice_problems.py Complete | 3 | | |
+| a1.py Functions Complete | 3 | 3 | |
+| a1_practice_problems.py Complete | 3 | 3 | |
 | **Reflection & Learning** | | | |
-| AI Collaboration Process | 2 | | |
-| Learning Reflection Quality | 2 | | |
-| **TOTAL** | **10** | | |
+| AI Collaboration Process | 2 | 2 | |
+| Learning Reflection Quality | 2 | 2 | |
+| **TOTAL** | **10** | 10 | You could give a little bit more detailed answers to your reflection.  I love the "magic" comment, but you could go a little deeper into that idea. You don't need paragraphs of text, but usually more than a sentance. |
 
 ---
 
